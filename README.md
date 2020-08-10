@@ -1,0 +1,1 @@
+C:\swagger-coverage-commandline-1.3.1\bin>swagger-coverage-commandline -s petstory.json -i swagger-coverage-output -c conf.json
