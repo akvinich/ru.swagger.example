@@ -27,6 +27,4 @@ public class ServiceTest {
         MDC.put("TestID", stamp);
     }
 
-
-
 }

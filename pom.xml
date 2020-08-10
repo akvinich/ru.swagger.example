@@ -29,7 +29,7 @@
         <aspectj.version>1.9.1</aspectj.version>
         <rest.assured>3.0.3</rest.assured>
         <rest-assured.version>3.0.3</rest-assured.version>
-        <sonar.project>ЕФС.БФС.Профиль сотрудника (API)</sonar.project>
+        <sonar.project>Swagger-project</sonar.project>
         <testdata-loader.version>3.0.0</testdata-loader.version>
         <maven-compiler-plugin.version>3.6.0</maven-compiler-plugin.version>
         <maven-surefire-plugin.version>2.21.0</maven-surefire-plugin.version>
@@ -126,7 +126,11 @@
             <artifactId>swagger-coverage-commandline</artifactId>
             <version>1.3.1</version>
         </dependency>
-
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.3.0</version>
+        </dependency>
     </dependencies>
 
     <profiles>
@@ -136,11 +140,7 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <properties>
-                <channel>baseSuite</channel>
-                <stand>depsUpload</stand>
-                <blockid>id</blockid>
-                <testSuitesBasePath>${project.basedir}\target\test-classes\data</testSuitesBasePath>
-                <testSuites>${testSuitesBasePath}\${channel}\${stand}\${blockid}\suite.xml</testSuites>
+                <testSuites>${project.basedir}\smoke.xml</testSuites>
             </properties>
         </profile>
     </profiles>
