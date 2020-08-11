@@ -140,7 +140,7 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <properties>
-                <testSuites>${project.basedir}\smoke.xml</testSuites>
+                <testSuites>${project.basedir}\target\test-classes\smoke.xml</testSuites>
             </properties>
         </profile>
     </profiles>

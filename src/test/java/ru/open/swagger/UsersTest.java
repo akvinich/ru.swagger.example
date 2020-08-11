@@ -13,7 +13,6 @@ import ru.open.swagger.dto.DoRegisterPojo;
 import ru.open.swagger.steps.Steps;
 
 import java.lang.reflect.Method;
-import java.util.HashMap;
 import java.util.Optional;
 
 import static io.qameta.allure.SeverityLevel.CRITICAL;
