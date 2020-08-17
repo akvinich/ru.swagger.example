@@ -3,7 +3,7 @@
 <suite name="Suite1" >
     <test name="Nopackage" >
         <classes>
-            <class name="ru.open.swagger.UsersTest"></class>
+            <class name="ru.open.swagger.UsersTest"/>
         </classes>
     </test>
 </suite>

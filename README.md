@@ -47,11 +47,7 @@
     
     2) Не работает указатель "$ref": "#/definitions/Register" на схему валидации из файла petstory.json
     
-    3) Ошибка при запуске тестов с помощью Мавен:
-        [ERROR] Cannot instantiate class ru.open.swagger.UsersTest
-        [ERROR] org.apache.maven.surefire.booter.SurefireBooterForkException: There was an error in the forked process
-
-    4) Исследовать возможность работы swagger-comandline через добавленную зависимость:
+    3) Исследовать возможность работы swagger-comandline через добавленную зависимость:
         <dependency>
             <groupId>com.github.viclovsky.swagger.coverage</groupId>
             <artifactId>swagger-coverage-commandline</artifactId>
