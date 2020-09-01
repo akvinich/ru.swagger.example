@@ -1,7 +1,6 @@
 package ru.open.swagger.dto;
 
 import static ru.open.swagger.helpers.PropHelper.*;
-import static ru.open.swagger.helpers.ValHelper.*;
 
 public class DoRegisterPojo extends BasePojo {
 
@@ -24,7 +23,7 @@ public class DoRegisterPojo extends BasePojo {
     public BasePojo getNewUserRegisterPojo() {
         jsonBody.clear();
         return this
-                .withProp(EMAIL, "akulis" + System.nanoTime() + "@gmail.com")
+                .withProp(EMAIL, "currentTimeEmail" + System.nanoTime() + "@gmail.com")
                 .withProp(NAME, "villi" + + System.nanoTime())
                 .withProp(PASSWORD, "4545454545");
     }
