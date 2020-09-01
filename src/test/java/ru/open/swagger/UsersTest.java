@@ -6,6 +6,7 @@ import io.qameta.allure.Feature;
 import io.qameta.allure.Severity;
 import io.qameta.allure.Story;
 import io.restassured.RestAssured;
+import io.restassured.response.Response;
 import org.slf4j.MDC;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
